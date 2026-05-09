@@ -438,11 +438,11 @@ APP:
 
 ## Status i ukończenie
 
-Domyślnie każda encja jest *aktywna*. Brak oznaczenia oznacza, że jest w grze i ma znaczenie. Dzięki temu nie musimy oznaczać niczego specjalnie podczas pisania notatek — dopiero gdy coś traci istotność.
+Domyślnie każda encja jest *aktywna* i ma znaczenie w grze. Dzięki temu nie musimy oznaczać niczego specjalnie podczas pisania notatek — dopiero gdy coś traci istotność.
 
 ### Przekreślenie
 
-Przekreślenie `~~tekst~~` unieważnia istotność encji w sesji — wzrok automatycznie ją pomija, ale zawartość zostaje w notatkach jako kontekst. Może to być ukończenie, dezaktualizacja albo pominięcie — kontekst rozstrzyga znaczenie. Przekreślenie dotyczy zarówno pojedynczych encji w trybie liniowym, jak i całych nagłówków sekcji.
+Przekreślenie `~~tekst~~` unieważnia istotność encji w sesji — wzrok automatycznie ją pomija, ale zawartość zostaje w notatkach jako kontekst. Może to być ukończenie, dezaktualizacja czy pominięcie. Przekreślenie dotyczy zarówno pojedynczych encji w trybie liniowym, jak i całych nagłówków sekcji.
 
 ```markdown
 ~~🔎 **Świeże ślady** wozu na drodze~~ — trop nieaktualny
@@ -462,16 +462,16 @@ Znaczniki `- [ ]` i `- [x]` oznaczają że encja jest **jawnym zadaniem** — cz
 
 `- [ ]` to cel wciąż otwarty. `- [x]` to cel ukończony — zostaje jako ślad, nie znika.
 
-Różnica wobec przekreślenia jest intencyjna: przekreślenie unieważnia istotność i pozwala wzrokowi ominąć encję bez tracenia kontekstu. `- [x]` mówi *zrobione* — encja nadal ma wagę jako potwierdzenie ukończenia.
+Różnica wobec przekreślenia jest intencyjna: przekreślenie unieważnia istotność i pozwala wzrokowi ominąć encję bez tracenia kontekstu. `- [x]` mówi *zakończone* — encja nadal ma wagę jako potwierdzenie ukończenia.
 
 ```markdown
-- [ ] **Wyprowadzić jeńców** przed świtem <magazyn nr 7> {wymaga klucza lub włamania}
-- [x] **Klucz do magazynu** zdobyty od Jimsa
+- [ ] **Wyprowadzić jeńców** przed świtem <magazyn nr 7> wymaga klucza lub włamania
+- [x] **Klucz do magazynu** zdobyć od Jimsa
 
 👤 **Borgrim**+
 kowal, wie o tunelu za karczmą
-- [ ] przekonać go do zeznań {Persw DC12}
 - // szantażowany przez Gildię
+- [ ] przekonać go do zeznań {Persw DC12}
 ```
 
 ---
@@ -493,7 +493,7 @@ Każdy krok progresji jest **zdarzeniem** albo **skutkiem zdarzeń**. Kontekst `
 
 Emoji `⚡` w nagłówku sygnalizuje, że scena jest pod presją czasu i każde zwlekanie graczy ma konsekwencje. Inne emoji, np. 🔎 mogą sygnalizować spokojniejszą progresję.
 
-Nieużyte ostatecznie kroki progresji przekreślamy: `~~2. !! Kapitan przybywa~~`. W ten sposób zaznaczamy, jaki był wynik sekwencji.
+Nieużyte ostatecznie kroki progresji przekreślamy: `2. ~~!! Kapitan przybywa~~`. W ten sposób zaznaczamy, jaki był wynik sekwencji.
 
 Kroki progresji zapisujemy zazwyczaj w formie liniowej. Pozwala to skanować całą progresję jednym spojrzeniem — wszystkie informacje o kroku są w jednym miejscu.
 
@@ -512,26 +512,25 @@ Jeśli gracze mogą zablokować lub zmienić bieg progresji, dodajemy osobny kro
 
 ## Symbole encji w nagłówkach
 
-Emoji w nagłówku sekcji jest opcjonalne. Większość nagłówków będzie bez niego — i to jest stan domyślny, ponieważ wpisanie emoji wymaga oderwania rąk od klawiatury. Dodajemy je tylko wtedy, gdy typ encji nie jest oczywisty z kontekstu albo gdy chcemy przyspieszyć skanowanie w długich notatkach.
+Emoji w nagłówku sekcji jest opcjonalne. Większość nagłówków obchodzi się bez niego. To stan domyślny, ponieważ wpisanie emoji wymaga oderwania rąk od klawiatury. Dodajemy je tylko wtedy, gdy typ encji nie jest oczywisty z kontekstu albo gdy chcemy przyspieszyć skanowanie w długich notatkach.
 
-Gdy emoji jest obecne, stoi przed nazwą i określa typ encji fikcyjnej opisywanej w sekcji. Wzrok rozpoznaje typ zanim przeczyta nazwę, a tekst zaraz po emoji to nazwa encji w świecie gry — bez żadnej etykiety pośredniej.
+Gdy emoji jest obecne, stoi przed nazwą i określa typ encji. Wzrok rozpoznaje typ zanim przeczyta nazwę, a tekst zaraz po emoji to nazwa encji w świecie gry.
 
 Emoji typu używamy wyłącznie przy pierwszej deklaracji encji. W relacjach, odnośnikach i dalszych wzmiankach piszemy już tylko imię, ponieważ encja jest w tym momencie znana czytelnikowi.
 
 Encja może być jednocześnie nagłówkiem markdownowym (`###`, `####`), jeśli jest dostatecznie złożona by mieć całą sekcję dokumentu. W takim wypadku nadrzędny nagłówek `##` pełni rolę kategorii — `## Miejsca`, `## Postacie`, `## Frakcje` — a encje pod nim siedzą jako `### 📍 Dry Gulch`. Unikamy w ten sposób duplikacji nazwy w nagłówku sekcji i pierwszej linii bloku.
 
 ```markdown
-## Miejsca
+## Miejsca w kraju Bracham
+Bracham to kraj w którym znajduje się kampania.
 
-### 📍 Dry Gulch
+### 📍 Suchy Wąwóz
 miasteczko górnicze, sześć budynków, jedno wyjście
 
-### 📍 Magazyn Cery
+#### 📍 Magazyn Cery
 przy zachodniej ścianie, zamknięty od trzech dni
 
-## Postacie
-
-### 👤 Borgrim
+#### 👤 Borgrim
 kowal, główny informator BG
 ```
 
