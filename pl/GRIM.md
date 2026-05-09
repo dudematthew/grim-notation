@@ -31,7 +31,7 @@ W efekcie GRIM nie jest systemem notatek w klasycznym sensie, tylko lekkim języ
 
 Skrót **BG** znaczy *Bohater Gracza* — są to postacie prowadzone przez graczy przy stole.
 Skrót **MG** znaczy *Mistrz Gry* — prowadzący sesję.
-Skrót **NPC** znaczy *Non-Player Character* — są to postacie fikcyjne, niezależne od graczy.
+Skrót **BN** znaczy *Non-Player Character* — są to postacie fikcyjne, niezależne od graczy.
 
 ## Markdown a GRIM
 GRIM jest zbudowany na [Markdown](https://wikipedia.org/wiki/Markdown) — języku opisu tekstu używanego do organizowania informacji. Markdown daje gotową infrastrukturę: nagłówki, listy, tabele, pogrubienia, cytaty. GRIM nie wymyśla własnego formatu — nakierunkowuje tę składnię tak, żeby służyła nie strukturze dokumentu, ale **percepcji MG przy stole**.
@@ -117,7 +117,7 @@ Jeśli encja zawiera wiele sekretów, przechodzimy do trybu blokowego — w tryb
 
 #### Fałsz
 
-Pozorna prawda formułowana tak jak gracze ją odbiorą — jako twierdzenie, nie opis. Trafia po `//!` i opisuje **kłamstwo wprost** — formułowane jak NPC by je wypowiedział lub jak gracze je odbiorą. Para występuje często razem: `//!` opisuje co gracze mają sądzić, `//` opisuje prawdę pod spodem.
+Pozorna prawda formułowana tak jak gracze ją odbiorą — jako twierdzenie, nie opis. Trafia po `//!` i opisuje **kłamstwo wprost** — formułowane jak BN by je wypowiedział lub jak gracze je odbiorą. Para występuje często razem: `//!` opisuje co gracze mają sądzić, `//` opisuje prawdę pod spodem.
 
 ```markdown
 //! Cera wydaje się być właścicielką magazynu, oferuje 50 srebrnych za pomoc
@@ -281,8 +281,8 @@ Modyfikatory to znaki które standaryzują często powtarzane sytuacje. Zamiast 
 | `<--` | poprzedniczka | Informacja wynikająca lub zapowiadająca przyszłe wydarzenia, ale nie wymaga jawnego śledzenia w tej scenie. Kontekst istnieje, jednak raczej jako informacja dla MG. | `zachowuje się podejrzanie <-- Gildia go szantażuje od miesięcy` |
 | `\|\|` | alternatywa | Jedno albo drugie, MG wybiera przy stole w zależności od sytuacji. Łączy też warunki: `<A \|\| B>`. *Tabele ulegają uszkodzeniu przy używaniu `\|`, dlatego używamy `\\|\\|`.* | `ucieka || negocjuje` |
 | `&` | i też | Łączy informacje równorzędne na jednej linii bez sugerowania relacji. Łączy też warunki: `<A & B>`. | `kowal & wie o tunelu` |
-| `+` / `-` | nastawienie NPC do graczy | Bez spacji po imieniu określa stosunek encji do bohaterów graczy. Brak oznaczenia oznacza neutralność lub stosunek czysto transakcyjny. | `**Borgrim**+`, `**Szet**-` |
-| `+` / `-` (między encjami) | relacja dwustronna | Ze spacjami z obu stron łączy dwie encje. `+` oznacza sojusz, sympatię, współpracę. `-` oznacza wrogość, rywalizację, konflikt. Działa dla NPC, frakcji, miejsc, organizacji. | `Stink Fists + Wioska`, `Stink Fists - Pissdrinkerzy` |
+| `+` / `-` | nastawienie BN do graczy | Bez spacji po imieniu określa stosunek encji do bohaterów graczy. Brak oznaczenia oznacza neutralność lub stosunek czysto transakcyjny. | `**Borgrim**+`, `**Szet**-` |
+| `+` / `-` (między encjami) | relacja dwustronna | Ze spacjami z obu stron łączy dwie encje. `+` oznacza sojusz, sympatię, współpracę. `-` oznacza wrogość, rywalizację, konflikt. Działa dla BN, frakcji, miejsc, organizacji. | `Stink Fists + Wioska`, `Stink Fists - Pissdrinkerzy` |
 | `~` | przybliżenie | Wartość orientacyjna lub niepewna. | `~3 dni`, `~połowa sali` |
 | `??` | niepewność | MG nie jest pewien — niespójność fabularna, dziura w logice, coś do sprawdzenia po sesji. | `// ?? planował ucieczkę` |
 | `^` | przypis | Element do dopracowania lub uzupełnienia po sesji. | `{Persw DC12} ^` |
@@ -340,7 +340,7 @@ loot: // co można zabrać
 
 ### `rel:` — relacje
 
-Powiązania encji z innymi encjami fikcyjnymi: NPC, frakcjami, miejscami, organizacjami. Otwieramy `rel:` tylko wtedy, gdy relacja ma znaczenie przy stole — wpływa na decyzje, otwiera wątki, generuje konflikty lub jest istotna dla przedstawienia encji. Relacje będące częścią tła, bez wpływu na rozgrywkę, pomijamy.
+Powiązania encji z innymi encjami fikcyjnymi: BN, frakcjami, miejscami, organizacjami. Otwieramy `rel:` tylko wtedy, gdy relacja ma znaczenie przy stole — wpływa na decyzje, otwiera wątki, generuje konflikty lub jest istotna dla przedstawienia encji. Relacje będące częścią tła, bez wpływu na rozgrywkę, pomijamy.
 
 Pierwsza linia to relacja, która najszybciej zmieni cokolwiek przy stole. Jeśli encja ma tylko jedną relację, zapisujemy ją liniowo w wyjaśnieniu zamiast otwierać subblok.
 
@@ -392,9 +392,9 @@ rp:
 
 ### Inne standardowe subbloki
 
-`know:` — lista rzeczy, które encja wie i może ujawnić, od tej o największej wartości fabularnej. Przydatne gdy NPC jest źródłem informacji i chcemy wiedzieć, co "wyciągniemy" zależnie od podejścia.
+`know:` — lista rzeczy, które encja wie i może ujawnić, od tej o największej wartości fabularnej. Przydatne gdy BN jest źródłem informacji i chcemy wiedzieć, co "wyciągniemy" zależnie od podejścia.
 
-`inv:` — przedmioty przy sobie lub w zasięgu, od najbardziej istotnego dla rozgrywki. Stosujemy gdy zawartość kieszeni NPC może wejść do gry — jako loot, dowód, narzędzie negocjacji.
+`inv:` — przedmioty przy sobie lub w zasięgu, od najbardziej istotnego dla rozgrywki. Stosujemy gdy zawartość kieszeni BN może wejść do gry — jako loot, dowód, narzędzie negocjacji.
 
 ```markdown
 👤 **Mira**-
@@ -538,7 +538,7 @@ kowal, główny informator BG
 | Emoji | Typ encji |
 |---|---|
 | `📍` | lokacja lub miejsce |
-| `👤` | NPC, postać niezależna |
+| `👤` | BN, postać niezależna |
 | `⚔️` | starcie, walka |
 | `🎭` | scena z priorytetem na odgrywanie ról i relacje |
 | `🗺️` | region, obszar lub mapa |
@@ -551,7 +551,7 @@ kowal, główny informator BG
 Domyślnie encja nosi jeden symbol. Dopuszczamy jednak wyjątek: modyfikator (np. `!!` lub `!?`) może stać przed symbolem typu encji. Kolejność jest zawsze stała — modyfikator pierwszy, typ drugi.
 
 ```markdown
-!! 👤 **Kapitan Varn**- zna twarze BG    ← krytyczny NPC
+!! 👤 **Kapitan Varn**- zna twarze BG    ← krytyczny BN
 !? 👤 **Mira**+ handlarka map            ← rewelacja dotycząca postaci
 ```
 
@@ -597,11 +597,11 @@ zostawiając za sobą wypalone pasma ziemi i ciszę, której tu nie powinno być
 *"Jeśli Vareth się dowie o tym spotkaniu — obaj zginiemy."*
 ```
 
-W treściach mówionych krótkie wypowiedzi NPC inline zapisujemy backtikami: `\`tak właśnie powiedział\``. Dłuższe wypowiedzi i pełne sceny dialogowe trafiają do bloku z prefiksem `📢`.
+W treściach mówionych krótkie wypowiedzi BN inline zapisujemy backtikami: `\`tak właśnie powiedział\``. Dłuższe wypowiedzi i pełne sceny dialogowe trafiają do bloku z prefiksem `📢`.
 
 | Prefiks | Typ treści |
 |---|---|
-| `📢` | tekst wypowiadany przez MG na głos — narracja mówiona lub dialog NPC, wypowiadany swobodnie |
+| `📢` | tekst wypowiadany przez MG na głos — narracja mówiona lub dialog BN, wypowiadany swobodnie |
 | `🌐` | tekst dla MG, czytany dla siebie, nie w celu wypowiedzenia — opis sytuacji, klimat, informacje dla MG które nie mają znaczenia dla graczy |
 | `📜` | tekst istniejący w świecie gry — listy, inskrypcje, dokumenty fikcyjne, do pokazania graczom |
 
