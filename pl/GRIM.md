@@ -1,14 +1,16 @@
 # GRIM — Glance, Read If Missing
 ---
 ## Manifest v0.7
-[![Licencja: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) ![Status](https://img.shields.io/badge/status-pre--release-yellow) [![Version](https://img.shields.io/github/v/release/dudematthew/grim-notation)](https://github.com/dudematthew/grim-notation/releases/latest)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg?label="Licencja")](https://creativecommons.org/licenses/by/4.0) ![Status](https://img.shields.io/badge/status-pre--release-yellow?label="Status") ![Wersja](https://img.shields.io/github/v/tag/dudematthew/grim-notation?sort=semver&label=Wersja)
 
 
 ![GRIM](https://i.imgur.com/MEn2OCI.png)
 
 **GRIM** to minimalistyczny system notatek dla RPG. Został stworzony aby ułatwić tworzenie i zarządzanie notatkami w trakcie sesji przez MG.
 
+<!--
 [TOC]
+-->
 
 ## Filozofia
 

@@ -1,8 +1,8 @@
-🇬🇧 [English](./README.md) | 🇵🇱 [Polski](./README.pl.md)
+🇬🇧 **[English](./README.md)** | 🇵🇱 Polski ✔
 
 # GRIM — Glance, Read If Missing
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) ![Status](https://img.shields.io/badge/status-pre--release-yellow) [![Version](https://img.shields.io/github/v/release/dudematthew/grim-rpg)](https://github.com/dudematthew/grim-notation/releases/latest)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg?label="Licencja")](https://creativecommons.org/licenses/by/4.0) ![Status](https://img.shields.io/badge/status-pre--release-yellow?label="Status") ![Wersja](https://img.shields.io/github/v/tag/dudematthew/grim-notation?sort=semver&label=Wersja)
 
 **GRIM** to minimalistyczny system notacji dla Mistrzów Gry. Zamiast organizować informacje jak dokument — organizuje je jak decyzję: im dalej w prawo, tym rzadziej potrzebne.
 

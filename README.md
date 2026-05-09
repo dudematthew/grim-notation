@@ -1,8 +1,8 @@
-🇬🇧 [English](./README.md) | 🇵🇱 [Polski](./README.pl.md)
+🇬🇧 English ✔ | **🇵🇱 [Polski](./README.pl.md)**
 
 # GRIM — Glance, Read If Missing
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) ![Version](https://img.shields.io/badge/version-v0.7-blue) ![Status](https://img.shields.io/badge/status-pre--release-yellow)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg?label="License")](https://creativecommons.org/licenses/by/4.0) ![Status](https://img.shields.io/badge/status-pre--release-yellow?label="Status") ![Wersja](https://img.shields.io/github/v/tag/dudematthew/grim-notation?sort=semver&label=Version)
 
 ---
 
