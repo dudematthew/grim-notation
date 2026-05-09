@@ -195,7 +195,7 @@ Każdy blok i podblok zaczyna się skrótem myślowym podsumowującym jego treś
 kowal, wie o tunelu za karczmą
 - <w kuźni po zmroku> {Persw DC12 | DC18} -> mówi o kontrakcie
 - // szantażowany przez Gildię od trzech miesięcy
-- rel:
+- REL:
   - **Thordin**+ brat [Thordin odkrył tunel jako pierwszy]
   - **Anata** znajoma ze sklepu na rogu <na ulicy> sprzeda mu jabłka za 2 md
 
@@ -253,7 +253,7 @@ Odnośnik zastępuje lub otacza nazwę w skrócie myślowym — dokładnie w tym
 W wyjaśnieniach i relacjach, gdzie encja jest już znana i nie otwieramy nowego bloku, stosujemy sam odnośnik bez pogrubienia:
 
 ```markdown
-rel:
+REL:
   - [[Thordin]]+ brat
   - @Szet-
 ```
@@ -327,20 +327,20 @@ gobliński podróżny, sprzedaje ser za 2 md [normalny koszt sera 3 md]
 
 ## Subbloki
 
-Subblok to nazwana lista wewnątrz bloku, która organizuje określony typ zawartości dotyczącej encji nadrzędnej. Każdy subblok otwiera się tagiem zakończonym dwukropkiem: `rel:`, `app:`, `rp:`. Nie jest pogrubiony ani pisany kursywą, ponieważ nie jest to skrót myślowy. Zawartość zapisujemy od najistotniejszego elementu do najbardziej pomijal­nego — czytelnik może przerwać skanowanie w dowolnym miejscu nie pomijając najważniejszych szczegółów. Każda linia to jeden element — stosujemy do nich te same warstwy GRIM co do reszty bloku.
+Subblok to nazwana lista wewnątrz bloku, która organizuje określony typ zawartości dotyczącej encji nadrzędnej. Każdy subblok otwiera się tagiem zakończonym dwukropkiem — **tag zapisujemy drukowanymi literami** (np. `REL:`, `APP:`, `RP:`, a nie `rel:`, `app:`, `rp:`). Nie jest pogrubiony ani pisany kursywą, ponieważ nie jest to skrót myślowy. Zawartość zapisujemy od najistotniejszego elementu do najbardziej pomijal­nego — czytelnik może przerwać skanowanie w dowolnym miejscu nie pomijając najważniejszych szczegółów. Każda linia to jeden element — stosujemy do nich te same warstwy GRIM co do reszty bloku.
 
 Możesz tworzyć własne subbloki — wystarczy dodać wyjaśnienie po `//`, żeby czytelnik wiedział, co tag oznacza:
 
 ```markdown
-choices: // wybory do podjęcia
-loot: // co można zabrać
+CHOICES: // wybory do podjęcia
+LOOT: // co można zabrać
 ```
 
 ---
 
-### `rel:` — relacje
+### `REL:` — relacje
 
-Powiązania encji z innymi encjami fikcyjnymi: BN, frakcjami, miejscami, organizacjami. Otwieramy `rel:` tylko wtedy, gdy relacja ma znaczenie przy stole — wpływa na decyzje, otwiera wątki, generuje konflikty lub jest istotna dla przedstawienia encji. Relacje będące częścią tła, bez wpływu na rozgrywkę, pomijamy.
+Powiązania encji z innymi encjami fikcyjnymi: BN, frakcjami, miejscami, organizacjami. Otwieramy `REL:` tylko wtedy, gdy relacja ma znaczenie przy stole — wpływa na decyzje, otwiera wątki, generuje konflikty lub jest istotna dla przedstawienia encji. Relacje będące częścią tła, bez wpływu na rozgrywkę, pomijamy.
 
 Pierwsza linia to relacja, która najszybciej zmieni cokolwiek przy stole. Jeśli encja ma tylko jedną relację, zapisujemy ją liniowo w wyjaśnieniu zamiast otwierać subblok.
 
@@ -349,7 +349,7 @@ Pierwsza linia to relacja, która najszybciej zmieni cokolwiek przy stole. Jeśl
 botanistka, pogodna, nieświadoma obsesji którą wzbudza
 - //! wydaje się być wiedźmą <<< oskarżana o czary
 
-rel:
+REL:
   - **Bailey**+ obsesja jednostronna — może działać pochopnie w jej obronie
   - 🏛️ **Cech Zielarzy**- wyrzucona za "niesubordynację"
   - **Lanja**+ siostry, absolutna lojalność
@@ -358,7 +358,7 @@ rel:
 
 ---
 
-### `app:` — wygląd
+### `APP:` — wygląd
 
 Charakterystyczne cechy wyglądu, które skupiają wzrok i zostają w pamięci. Pierwsza linia to detal najczęściej wymieniany lub najtrudniejszy do przeoczenia — to, co gracz zobaczy i zapamięta.
 
@@ -366,7 +366,7 @@ Charakterystyczne cechy wyglądu, które skupiają wzrok i zostają w pamięci. 
 👤 **Mira**-
 handlarka mapami, zna każdy szlak w prowincji
 
-app:
+APP:
   - brakuje lewego ucha
   - zielony płaszcz z dziesiątkami kieszeni, zawsze coś z nich wystaje
   - mówi bez przerwy, rzadko patrzy w oczy rozmówcy
@@ -374,7 +374,7 @@ app:
 
 ---
 
-### `rp:` — odgrywanie
+### `RP:` — odgrywanie
 
 Charakterystyczne zachowania do naśladowania przy stole. Pierwsza linia to sygnał, który najszybciej da graczom znać, że MG właśnie *jest* tą postacią — gest, manieryzm, fraza. Kolejne to szczegóły dokładające głębi.
 
@@ -382,7 +382,7 @@ Charakterystyczne zachowania do naśladowania przy stole. Pierwsza linia to sygn
 👤 **Borgrim**+
 kowal, wie o tunelu za karczmą
 
-rp:
+RP:
   - przed odpowiedzią zawsze uderza młotem w kowadło - raz, z namysłem
   - mówi powoli, urwanymi zdaniami, jakby każde słowo kosztowało
   - <przy pytaniach o Gildię> porządkuje narzędzia zamiast patrzeć na BG
@@ -392,21 +392,21 @@ rp:
 
 ### Inne standardowe subbloki
 
-`know:` — lista rzeczy, które encja wie i może ujawnić, od tej o największej wartości fabularnej. Przydatne gdy BN jest źródłem informacji i chcemy wiedzieć, co "wyciągniemy" zależnie od podejścia.
+`KNOW:` — lista rzeczy, które encja wie i może ujawnić, od tej o największej wartości fabularnej. Przydatne gdy BN jest źródłem informacji i chcemy wiedzieć, co "wyciągniemy" zależnie od podejścia.
 
-`inv:` — przedmioty przy sobie lub w zasięgu, od najbardziej istotnego dla rozgrywki. Stosujemy gdy zawartość kieszeni BN może wejść do gry — jako loot, dowód, narzędzie negocjacji.
+`INV:` — przedmioty przy sobie lub w zasięgu, od najbardziej istotnego dla rozgrywki. Stosujemy gdy zawartość kieszeni BN może wejść do gry — jako loot, dowód, narzędzie negocjacji.
 
 ```markdown
 👤 **Mira**-
 handlarka mapami, zna każdy szlak w prowincji
 
-know:
+KNOW:
   - zna obóz Pissdrinkerów — była tam trzy dni temu
   - ?? wie że most na Skarze jest zniszczony
     - // słyszała od kupca, sama nie sprawdzała 
     - handluje od piętnastu lat, zna każdego strażnika na szlaku
 
-inv:
+INV:
   - mapa z zaznaczonym obozem (żąda 20 md)
   - klucz - nie wie co otwiera, znalazła przy drodze // otwiera skład w Portven
   - nóż ukryty w bucie
@@ -421,15 +421,15 @@ Subbloki można łączyć w jednym bloku w kolejności zależnej od priorytetu. 
 kowal, wie o tunelu za karczmą
 - // szantażowany przez Gildię od trzech miesięcy
 
-rp:
+RP:
   - uderza młotem przed każdą odpowiedzią
   - <przy pytaniach o Gildię> zaczyna sprzątać warsztat
 
-rel:
+REL:
   - **Thordin**+ brat - jedyna osoba której ufa
   - 🏛️ **Gildia Cieni**- szantażysta
 
-app:
+APP:
   - ogromne dłonie, blizna przez prawą brew
   - zawsze w fartuchu, nawet poza kuźnią
 ```
@@ -542,7 +542,6 @@ kowal, główny informator BG
 | `⚔️` | starcie, walka |
 | `🎭` | scena z priorytetem na odgrywanie ról i relacje |
 | `🗺️` | region, obszar lub mapa |
-| `📝` | zadanie, cel, quest |
 | `⚡` | progresja, presja czasu |
 | `🏛️` | frakcja, organizacja |
 
@@ -714,7 +713,7 @@ kowal, wie o tunelu za karczmą
 wejście zna tylko on i Thordin
 - <po zmroku> -> da się zejść bez świadków
 
-rel:
+REL:
   - **Thordin**+ brat [Thordin odkrył tunel jako pierwszy]
   - **Anata** znajoma ze sklepu na rogu <na ulicy> sprzeda mu jabłka za 2 md
 
@@ -740,7 +739,6 @@ Tabela referencyjna wszystkich emoji używanych w systemie wraz ze sposobami ich
 | ⚔️ | `skrzyżowane miecze` | `:crossed_swords:` |
 | 🎭 | `maski teatralne` | `:performing_arts:` |
 | 🗺️ | `mapa świata` | `:world_map:` |
-| 📝 | `memo` | `:memo:` |
 | ⚡ | `wysokie napięcie` | `:zap:` |
 | 🏛️ | `klasyczna budowla` | `:classical_building:` |
 | 🧩 | `puzle` | `:jigsaw:` |
