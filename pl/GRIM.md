@@ -1,6 +1,6 @@
 # GRIM — Glance, Read If Missing
 ---
-## Manifest v0.7
+## Manifest v0.8
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg?label="Licencja")](https://creativecommons.org/licenses/by/4.0)
 
 
@@ -113,11 +113,10 @@ Opis mechaniki gry mający znaczenie dla encji: matematyka, statystyki, efekty, 
 
 Ukryta prawda znana tylko MG — co naprawdę się dzieje za fasadą którą widzą gracze. Trafia po `//` i zawsze stoi na końcu linii. Jeśli encja ma wiele sekretów, przechodzimy do trybu blokowego — przy dwóch lub więcej `//` linia staje się nieczytelna.
 
-Jeśli encja zawiera wiele sekretów, przechodzimy do trybu blokowego — w trybie liniowym mieści się jeden `//`, przy dwóch lub więcej linia staje się nieczytelna.
-
 #### Fałsz
 
-Pozorna prawda formułowana tak jak gracze ją odbiorą — jako twierdzenie, nie opis. Trafia po `//!` i opisuje **kłamstwo wprost** — formułowane jak BN by je wypowiedział lub jak gracze je odbiorą. Para występuje często razem: `//!` opisuje co gracze mają sądzić, `//` opisuje prawdę pod spodem.
+Pozorna prawda formułowana tak jak gracze ją odbiorą — jako twierdzenie, nie opis. Trafia po `//!` i opisuje **nieprawdę** — formułowaną tak jak BN by ją wypowiedział lub jak gracze ją odbiorą. Dobrze zapisywać ją w formie przypuszczającej, np. "wydaje się" lub "wygląda na" zamiast "jest".
+Para występuje często razem: `//!` opisuje co gracze mają sądzić, `//` opisuje prawdę pod spodem.
 
 ```markdown
 //! Cera wydaje się być właścicielką magazynu, oferuje 50 srebrnych za pomoc

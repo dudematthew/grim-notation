@@ -6,8 +6,11 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- **Manifest** in `pl/GRIM.md` bumped to **v0.8**.
 - **Subblock tags must be uppercase** (e.g. `REL:`, `APP:`, `RP:`; not `rel:`, `app:`, `rp:`). Documented and exemplified throughout the Polish GRIM specification (`pl/GRIM.md`).
+- **`//!` (surface falsehood) layer:** reframed as **nieprawdę** (not “lie” phrasing); added guidance to prefer hedged wording (“wydaje się”, “wygląda na”) over flat assertion.
 - **Polish spec (`pl/GRIM.md`) — clarity and examples**
+  - **Secrets (`//`) intro:** duplicate paragraph about multiple secrets and block mode removed.
   - Default *active* entity wording tightened (significance in play stated up front).
   - Strikethrough section: small wording polish; task vs. strike contrast now uses *zakończone* for completed checklist items.
   - Task/checklist examples: mechanics phrasing and item order in the sample block adjusted.
