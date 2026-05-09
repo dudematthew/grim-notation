@@ -18,7 +18,7 @@ Wzrok skanuje od lewej i zatrzymuje się gdy ma wystarczająco. Najczęściej �
 
 GRIM to lekki język operacyjny do prowadzenia sesji RPG — zbudowany na Markdown, zaprojektowany pod percepcję MG przy stole. Minimalizuje czas od spojrzenia do wdrożenia, maksymalizuje ilość znaczenia w jednej linii.
 
-→ **[Pełny manifest: GRIM.md](GRIM.md)**
+→ **[Pełny manifest: GRIM.md](./pl/GRIM.md)**
 
 ---
 
