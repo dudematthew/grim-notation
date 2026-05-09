@@ -1,7 +1,7 @@
 # GRIM — Glance, Read If Missing
 ---
 ## Manifest v0.7
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg?label="Licencja")](https://creativecommons.org/licenses/by/4.0) ![Status](https://img.shields.io/badge/status-pre--release-yellow?label="Status") ![Wersja](https://img.shields.io/github/v/tag/dudematthew/grim-notation?sort=semver&label=Wersja)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg?label="Licencja")](https://creativecommons.org/licenses/by/4.0)
 
 
 ![GRIM](https://i.imgur.com/MEn2OCI.png)
