@@ -24,6 +24,7 @@ All notable changes to this project will be documented in this file.
   - Step-by-step examples (*Krok 1–7*) unified to use colons and causal phrasing.
 - **Terminology** (`BG`, `MG`, `BN`): definitions now use *czyli* instead of em-dash apposition.
 - **Block-mode guidance** (layout under skrót, subsections, `&` under headers): expanded for scanability without changing rules.
+- **Wyjaśnienie layer intro:** *bez nawiasów* corrected to *bez pogrubienia*, contrasting plain text with the bold skrót; the layer may still use GRIM symbols (`<>`, `{}`, `//`, etc.).
 
 ### Unchanged on purpose
 

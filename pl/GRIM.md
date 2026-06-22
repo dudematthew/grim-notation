@@ -89,7 +89,7 @@ Skrót powinien od razu zawierać kontekst całej encji: `**złodziej nocny**` z
 
 #### Wyjaśnienie
 
-Wyjaśnienie znajduje się bezpośrednio po skrócie jako czysty tekst, bez nawiasów. To pierwsza i najczęściej czytana warstwa rozwinięcia. W wyjaśnieniu można używać symboli warunków, modyfikatorów i sekretów.
+Wyjaśnienie znajduje się bezpośrednio po skrócie jako czysty tekst, bez pogrubienia, w przeciwieństwie do skrótu myślowego. To pierwsza i najczęściej czytana warstwa rozwinięcia. W wyjaśnieniu można używać symboli warunków, modyfikatorów i sekretów.
 
 #### Kontekst
 
