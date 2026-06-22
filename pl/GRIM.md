@@ -284,8 +284,8 @@ Modyfikatory to znaki które standaryzują często powtarzane sytuacje. Zamiast 
 | `+` / `-` (między encjami) | relacja dwustronna | Ze spacjami z obu stron łączy dwie encje. `+` oznacza sojusz, sympatię, współpracę. `-` oznacza wrogość, rywalizację, konflikt. Działa dla BN, frakcji, miejsc, organizacji. | `Stink Fists + Wioska`, `Stink Fists - Pissdrinkerzy` |
 | `~` | przybliżenie | Wartość orientacyjna lub niepewna. | `~3 dni`, `~połowa sali` |
 | `??` | niepewność | MG nie jest pewien — niespójność fabularna, dziura w logice, coś do sprawdzenia po sesji. | `// ?? planował ucieczkę` |
-| `^` | uzupełnienie po sesji | Element do dopracowania gdy pojawią się akcje i wybory graczy które są potrzebne do uzupełnienia encji. | `**^**` |
-| `^^` | opracowanie przed sesją | Element do dopracowania przed sesją — gdy najpierw piszemy szczegóły encji, a główne informacje (skrót, wyjaśnienie) dopisujemy na końcu. Patrz [Rozpoczęcie pisania](#rozpoczęcie-pisania). | `**^^**` |
+| `^` | uzupełnienie po sesji | Element do dopracowania gdy pojawią się akcje i wybory graczy które są potrzebne do uzupełnienia encji. | `^ Miejsce skoku na bank` |
+| `^^` | opracowanie przed sesją | Element do dopracowania przed sesją — gdy najpierw piszemy szczegóły encji, a główne informacje (skrót, wyjaśnienie) dopisujemy na końcu. Patrz [Rozpoczęcie pisania](#rozpoczęcie-pisania). | `^^ Przybysz z Czarnej Katedry` |
 
 ### Złożone konteksty
 
