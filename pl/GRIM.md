@@ -284,7 +284,8 @@ Modyfikatory to znaki które standaryzują często powtarzane sytuacje. Zamiast 
 | `+` / `-` (między encjami) | relacja dwustronna | Ze spacjami z obu stron łączy dwie encje. `+` oznacza sojusz, sympatię, współpracę. `-` oznacza wrogość, rywalizację, konflikt. Działa dla BN, frakcji, miejsc, organizacji. | `Stink Fists + Wioska`, `Stink Fists - Pissdrinkerzy` |
 | `~` | przybliżenie | Wartość orientacyjna lub niepewna. | `~3 dni`, `~połowa sali` |
 | `??` | niepewność | MG nie jest pewien — niespójność fabularna, dziura w logice, coś do sprawdzenia po sesji. | `// ?? planował ucieczkę` |
-| `^` | przypis | Element do dopracowania lub uzupełnienia po sesji. | `{Persw DC12} ^` |
+| `^` | uzupełnienie po sesji | Element do dopracowania gdy pojawią się akcje i wybory graczy które są potrzebne do uzupełnienia encji. | `**^**` |
+| `^^` | opracowanie przed sesją | Element do dopracowania przed sesją — gdy najpierw piszemy szczegóły encji, a główne informacje (skrót, wyjaśnienie) dopisujemy na końcu. Patrz [Rozpoczęcie pisania](#rozpoczęcie-pisania). | `**^^**` |
 
 ### Złożone konteksty
 
@@ -321,6 +322,31 @@ gobliński podróżny, sprzedaje ser za 2 md [normalny koszt sera 3 md]
 - // ser powoduje chorobę {oszołomienie DC12}
 - {perswazja z utrudnieniem -> mówi o maruderach}
 ```
+
+---
+
+## Rozpoczęcie pisania
+
+Wiemy już jak *czytać* GRIM — znamy encje, bloki, znaki, emotikony — jednak jak szybko i efektywnie rozpisać sesję lub elementy sesji? W końcu GRIM odrzuca standardowe sortowanie danych i grupowanie ich po rodzaju — informacja na temat wielkiego skoku na bank może mieć swoją encję, ale równie dobrze jej duża część będzie znajdować się w bloku encji jakiegoś zamieszanego w nią BN. Z taką wolnością wiąże się pewien paraliż decyzyjny. **Od czego zacząć?**
+
+Odpowiedź brzmi — notatki tworzymy od dołu do góry:
+
+* Najpierw powinno się napisać rzeczy, które rzeczywiście będą trudne do przypomnienia sobie na sesji — w końcu nie po to zapisujemy notatki, żeby czytać o tym co już wiemy i dobrze pamiętamy. Jeśli wiemy, że nie będziemy pamiętać jak opisać tundrę, to jest to idealna informacja, która powinna pojawić się pierwsza w notatkach.
+* Dobrze zaczynać również od szczegółów a nie od ogólników — w końcu skróty myślowe podsumowują to, co znajduje się w reszcie encji. Jeśli zaczniemy od cech charakterystycznych postaci, może się okazać, że pierwotne „Niecodzienny przybysz" zmieni się na „Przybycie bohatera z fortecy".
+* Gdy już mamy wszystkie elementy, które wiemy że sprawią nam trudność, reszta jest już bułką z masłem — oryginalny zamysł mamy w głowie. Wystarczy go oprzeć o szczegóły które stworzyliśmy i scenariusz jest gotowy.
+
+Do powyższego celu powinniśmy nadużywać symbolu `^^` — dzięki niemu możemy tworzyć „puste encje" zachowując anatomię gotową do uzupełnienia na koniec:
+
+```markdown
+**^^**
+^^ Przybysz z Czarnej Katedry
+
+APP:
+- Nosi czarną jak noc zbroję // Materiał stworzył sam Władca Ciemności
+- Przy pasie ma olbrzymi miecz
+```
+
+Skupienie się na zbroi i mieczu powyższego przybysza może nie tylko wywołać uczucie, że coś tworzymy zamiast tylko przepisywać, ale też przełamać paraliż decyzyjny i wywołać obraz scenariusza w głowie, ułatwiając kolejne kroki. Być może jego wejście jest na tyle ciekawe, że otrzyma własną, kolejną encję, a na samej Czarnej Katedrze można skupić się potem?
 
 ---
 
@@ -452,7 +478,7 @@ Przekreślenie `~~tekst~~` unieważnia istotność encji w sesji — wzrok autom
 
 ### ~~📍 Karczma Pod Rakiem~~ — scena minęła lub lokacja nie ma już znaczenia
 
-### ~~📍 ❌ Karczma Pod Rakiem~~ — scena nie doczekała wykorzystania
+### ~~📍 ♻ Karczma Pod Rakiem~~ — gdy używamy znaku `♻` to oznacza, że scena nie doczekała się wykorzystania i powinna zostać wykorzystana w innym miejscu
 ```
 
 ### Zadania
